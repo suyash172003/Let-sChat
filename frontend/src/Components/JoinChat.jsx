@@ -8,7 +8,7 @@ function JoinChat() {
 
   const handleJoin = () => {
     if (username.trim() && room.trim()) {
-      navigate(`/chatroom`, { state: { username, room } })
+      navigate(`/room`, { state: { username, room } })
     }
   }
 
