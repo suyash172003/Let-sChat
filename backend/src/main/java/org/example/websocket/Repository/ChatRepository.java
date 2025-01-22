@@ -9,4 +9,8 @@ import java.util.List;
 @Repository
 public interface ChatRepository extends JpaRepository<Message, Long>{
     List<Message> findAllByRoomId(Long roomId);
+
+    List findAllNameById(Long id);
+
+    List<Message> getDistinctByUserEquals(String user);
 }

@@ -21,4 +21,5 @@ public class MessageController {
     public List<Message> messages(@PathVariable Long roomId) {
         return chatRepository.findAllByRoomId(roomId);
     }
+
 }
